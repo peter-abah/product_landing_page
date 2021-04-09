@@ -1,0 +1,210 @@
+@charset "UTF-8";
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+/* Styles for the entire body */ 
+body {
+    width: 100%;
+    background-color: rgb(240, 241, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Styles for the header portion */
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    background-color: rgb(240, 241, 241);
+}
+#header-img {
+    margin: 10px;
+    margin-right: auto;
+    
+}
+nav ul {
+    display: flex;
+}
+.nav-link {
+    margin: 0 2.2em;
+}
+
+/* Stlyes for the forms and intro message */
+#intro {
+    margin-top: 65px;
+    text-align: center;
+}
+#email {
+    width: 20em;
+    height: 2em;
+    /* border: 2px solid black; */
+    padding: 0.5em;
+    margin: 1em;
+}
+#submit {
+    width: 160px;
+    height: 2rem;
+    border: none;
+    background-color: rgb(224, 190, 1);
+    font-weight: 900;
+    padding: 5px 7px;
+}
+
+/* Styles for the features */
+#features {
+    width: 80%;
+    margin-left: auto;
+}
+.features-heading {
+    margin-bottom: 0px;
+}
+.features p {
+    margin-top: 0px;
+}
+
+/* Styles for the video */
+#video {
+    width: 500px;
+    height: 300px;
+    background-color: black;
+    margin: 40px;
+}
+
+/* Styles for the products */
+#products {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+    font-size: 1em;
+    padding: 0 15%;
+}
+.product {
+    border: 1px solid black;
+    width: 33.3%;
+    height: 279px;
+    margin: 0 10px;
+    text-align: center;
+}
+.product > p {
+    font-size: small;
+    line-height: 2em;
+}
+.product-name {
+    font-weight: bold;
+    background-color: rgb(221, 221, 221);
+    margin: 0;
+    height: 15%;
+}
+.product-name p {
+    margin: 0;
+    padding: 10px 0;
+}
+.product-price {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.select-button {
+    margin-top: 20px;
+    color: black;
+    width: 33.3%;
+    height: 2em;
+    background-color: rgb(224, 190, 1);
+    border: none;
+    text-transform: uppercase;
+    appearance: none;
+}
+
+/* Styles for the footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 75%;
+    text-align: right;
+    background-color: rgb(221, 221, 221);
+    font-size: 0.8em;
+}
+footer ul {
+    display: flex;
+    margin-bottom: 2px;
+}
+footer ul a {
+    margin: 0 20px;
+}
+#copyright {
+    color: rgb(87, 87, 87);
+    margin: 5px 20px 15px;
+
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    #header-img {
+        margin: 5px auto;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .features {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #intro {
+        margin: 120px 20px;
+    }
+    #features {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #products {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15%;
+    }
+    .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+/* @media screen and (max-width: 1026px) {
+    body {
+        font-size: 1.3em;
+    }
+} */
