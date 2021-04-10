@@ -36,7 +36,7 @@ header {
 #header-img {
     margin: 10px;
     margin-right: auto;
-    
+    width: 25em;
 }
 nav ul {
     display: flex;
